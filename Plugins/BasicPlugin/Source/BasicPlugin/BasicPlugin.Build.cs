@@ -26,6 +26,8 @@ public class BasicPlugin : ModuleRules
 			new string[]
 			{
 				"Core",
+				"CoreUObject",
+				"Engine",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -38,14 +40,14 @@ public class BasicPlugin : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"InputCore",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
 		
 		
 		DynamicallyLoadedModuleNames.AddRange(
-			new string[]
-			{
+			new string[] {
 				// ... add any modules that your module loads dynamically here ...
 			}
 			);

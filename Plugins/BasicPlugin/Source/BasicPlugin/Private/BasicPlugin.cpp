@@ -1,12 +1,14 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "BasicPlugin.h"
+#include "MyGameInstance.h"
 
 #define LOCTEXT_NAMESPACE "FBasicPluginModule"
 
 void FBasicPluginModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
+	UE_LOG(LogTemp, Log, TEXT("BasicPlugin module started. MyGameInstance is now available."));
 }
 
 void FBasicPluginModule::ShutdownModule()
