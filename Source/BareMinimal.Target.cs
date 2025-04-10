@@ -11,5 +11,6 @@ public class BareMinimalTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
 		ExtraModuleNames.Add("BareMinimal");
+		ExtraModuleNames.Add("SourceModule");
 	}
 }
